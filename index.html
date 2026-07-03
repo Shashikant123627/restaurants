@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Savor - Premium Dining Experience. Discover culinary excellence in a stunning atmosphere.">
+    <title>Savor | Premium Dining</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Savor.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="reveal-text">A Taste of <br><span class="highlight">Elegance</span></h1>
+            <p class="reveal-text delay-1">Experience modern culinary arts inside a breathtaking dining space.</p>
+            <a href="#reservation" class="btn primary reveal-text delay-2">Book a Table</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-text scroll-reveal">
+                <h2 class="section-title">The Art of <br>Fine Dining</h2>
+                <p>At Savor, we believe that dinner is more than just a meal—it is an experience. Our world-renowned chefs craft every dish with precision, blending classic techniques with modern innovation.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Michelin Stars</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image scroll-reveal right">
+                <!-- We will use a glassmorphism card over an image -->
+                <div class="glass-card">
+                    <h3>"A symphony of flavors."</h3>
+                    <p>- Food Critics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title center scroll-reveal">Signature Dishes</h2>
+            <div class="menu-grid">
+                <!-- Dish 1 -->
+                <div class="menu-card scroll-reveal fade-up">
+                    <div class="card-img">
+                        <img src="./assets/dish_1.png" alt="Gourmet Steak">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Truffle Wagyu Steak</h3>
+                            <span class="price">$85</span>
+                        </div>
+                        <p>Premium grade Wagyu beef served with roasted asparagus and a rich black truffle glaze.</p>
+                        <button class="btn secondary sm">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="menu-card scroll-reveal fade-up delay-1">
+                    <div class="card-img">
+                        <img src="./assets/dish_2.png" alt="Exquisite Sushi">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Ethereal Sushi Platter</h3>
+                            <span class="price">$120</span>
+                        </div>
+                        <p>Chef's selection of the finest raw cuts artfully presented with visual dry ice smoke.</p>
+                        <button class="btn secondary sm">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="menu-card scroll-reveal fade-up delay-2">
+                    <div class="card-img" style="background:#1a1a1a;">
+                        <img src="./assets/dish_3.png" alt="Chocolate Lava Cake" id="dish3-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Golden Lava Dome</h3>
+                            <span class="price">$45</span>
+                        </div>
+                        <p>Valrhona chocolate fondant filled with warm salted caramel, adorned with 24k gold flakes.</p>
+                        <button class="btn secondary sm">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container reservation-grid">
+            <div class="reservation-info scroll-reveal">
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p>Join us for an unforgettable evening. We strongly recommend booking in advance to ensure availability.</p>
+                <div class="contact-details">
+                    <p><strong>Call Us:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Location:</strong> 123 Culinary Ave, Food City</p>
+                    <p><strong>Hours:</strong> Tue - Sun | 5:00 PM - 11:00 PM</p>
+                </div>
+            </div>
+            <div class="reservation-form scroll-reveal right">
+                <form id="bookingForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <select id="guests" required>
+                            <option value="" disabled selected>Number of Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Savor.</div>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p class="copyright">&copy; 2026 Savor Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
